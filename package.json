@@ -1,0 +1,21 @@
+{
+  "name": "discord-musicbot",
+  "main": "index.js",
+  "author": "Igor Bayerl",
+  "version": "1.0.0",
+  "repository": "https://github.com/IgorBayerl/Discord-MusicBot",
+  "description": "A complete DJ bot for your discord server.",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord-player": "^5.1.0",
+    "discord.js": "^13.1.0",
+    "ms": "^3.0.0-canary.1",
+    "opusscript": "^0.0.8",
+    "play-dl": "^1.7.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
