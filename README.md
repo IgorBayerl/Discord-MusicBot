@@ -2,18 +2,27 @@
 
 An open source discord bot that plays music.
 
-## 📑 Installation
 
-
-### Pre requirements.
+## ✔ Pre requirements.
 
 - [x] [FFmpeg](https://www.ffmpeg.org) to process the audio
 
 - [x] [NodeJS 16](https://nodejs.org/en/)
 
+## 📑 Installation
+
 
 ### Creating an discord bot on discord dev tools
 [Discord Developers section](https://discordapp.com/developers/applications) 
+
+1 - Create a new application
+
+2 - Create a new bot
+
+3 - In the **Bot** section, turn on the `PRESENCE INTENT` , `SERVER MEMBERS INTENT` and `MESSAGE CONTENT INTENT`
+
+4 - Generate the link to invite the bot in the **OAuth2 -> URL Generator** section.
+
 ### Clone the repository
 
 - Open the terminal and run this commands.
