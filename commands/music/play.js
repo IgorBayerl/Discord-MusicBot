@@ -23,30 +23,13 @@ module.exports = {
                 metadata: message.channel,
 
                 async onBeforeCreateStream(track, source, _queue) {
-                    console.log(`teste steam`);
-                    // only trap youtube source
                     if (source === "youtube") {
-                        console.log(`teste steam2`);
-                        
-                        // track here would be youtube track
+                        console.log(`play-dl`);
                         return (await playdl.stream(track.url)).stream;
-                        // we must return readable stream or void (returning void means telling discord-player to look for default extractor)
                     }
                 }
             });
 
-
-            
-
-            // if(!queue.createStream) {
-            //     console.log(`!queue.createStream`);
-            //     queue.createStream = async (track, source, _queue) => {
-            //         if (source === "youtube") {
-            //             return (await playdl.stream(track.url)).stream;
-            //         }
-            //     };
-            // }
-        
             try {
                 if (!queue.connection) await queue.connect(message.member.voice.channel);
             } catch {
