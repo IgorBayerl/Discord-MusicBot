@@ -18,7 +18,14 @@ module.exports = {
         if (!res || !res.tracks.length) return message.channel.send(`No results...`);
 
         const queue = await player.createQueue(message.guild, {
-            metadata: message.channel
+            metadata: message.channel,
+
+            async onBeforeCreateStream(track, source, _queue) {
+                if (source === "youtube") {
+                    console.log(`play-dl`);
+                    return (await playdl.stream(track.url)).stream;
+                }
+            }
         });
 
         const maxTracks = res.tracks.slice(0, 10)

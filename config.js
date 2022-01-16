@@ -1,12 +1,12 @@
 module.exports = {
     app: {
         prefix: '??',
-        token: `XXXXX`,
+        token: 'XXXXX',
         playing: 'Making this server 200% better!',
         maxVolume: 100,
         loopMessage: true,
         discordPlayer: {},
-        language: 'en',
+        language: 'pt',
         DJ: {
             enabled: false,
             roleName: 'DJ Grafite',
