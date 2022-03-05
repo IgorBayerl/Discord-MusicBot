@@ -1,7 +1,8 @@
+require('dotenv').config()
 module.exports = {
     app: {
-        prefix: '??',
-        token: 'XXXXX',
+        prefix: '!',
+        token: process.env.TOKEN,
         playing: 'Making this server 200% better!',
         maxVolume: 100,
         loopMessage: true,
